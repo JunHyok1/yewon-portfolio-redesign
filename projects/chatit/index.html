@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatit · Yewon Choi</title>
+  <meta name="description" content="A campus timetable and community app, built by a three-person founding team.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+  <script>
+    /* Must run before first render: pick the slide direction for this page's view transition. */
+    addEventListener('pagereveal', (e) => {
+      const dir = sessionStorage.getItem('vt-dir'); sessionStorage.removeItem('vt-dir');
+      if (e.viewTransition && dir && location.pathname !== '/') e.viewTransition.types.add(dir);
+    });
+    document.addEventListener('click', (e) => { const a = e.target.closest('a[data-dir]'); sessionStorage.setItem('vt-dir', a ? a.dataset.dir : ''); });
+  </script>
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-brand" href="/">Yewon Choi</a>
+      <ul class="nav-list">
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#leadership">Leadership</a></li>
+        <li><a href="/#education">Education</a></li>
+      </ul>
+      <span class="nav-indicator" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <main id="main-content" class="container">
+    <header class="case-head" id="top">
+      <a class="link" href="/#row-chatit" data-dir="back"><svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 6H2M5.5 2.5 2 6l3.5 3.5"/></svg> Projects</a>
+      <h1>Chatit</h1>
+      <p class="t-meta">Founding Member &amp; iOS Developer · Apr – Dec 2025</p>
+      <p class="case-summary">A campus timetable and community app, built by a three-person founding team.</p>
+      <ul class="chips"><li>300+ users</li><li>App Store, Oct 2025</li></ul>
+      
+    </header>
+    <figure class="case-hero case-hero--logo" style="view-transition-name: media-chatit"><img src="/assets/projects/chatit/thumb.png" alt=""></figure>
+    <div class="case-body">
+      <section class="block"><h2 class="t-label">Problem</h2><div class="block-content"><p>There was no campus-specific app for class timetables or class discussion, so students were saving their class schedules as phone screenshots.</p></div></section>
+      <section class="block"><h2 class="t-label">Research</h2><div class="block-content"><p>We found this problem through student interviews.</p></div></section>
+      <section class="block"><h2 class="t-label">Solution</h2><div class="block-content"><p>A campus timetable and community app, built with Flutter and Firebase. I led the core timetable feature.</p></div></section>
+      <section class="block"><h2 class="t-label">Impact</h2><div class="block-content"><p>Launched on the App Store in Oct 2025 and reached 300+ users through in-person outreach at campus libraries.</p></div></section>
+      <section class="block"><h2 class="t-label">Reflection</h2><div class="block-content"><p>Growth plateaued after launch. Students were already on established channels like Reddit and Snapchat, and the cost of switching was high.</p></div></section>
+      <section class="block"><h2 class="t-label">Tools</h2><div class="block-content"><p>Flutter · Firebase · iOS</p></div></section>
+    </div>
+    <nav class="pager" aria-label="More case studies">
+      <a href="/projects/p2sac/" data-dir="back"><span class="t-label">Previous</span><b>P2SAC LinkedIn Content Strategy</b></a>
+      <a class="next" href="/oz-lab/" data-dir="forward"><span class="t-label">Next</span><b>OZ Lab</b></a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row"><span>© 2026 Yewon Choi · Last updated November 19, 2026</span><a href="#top">Back to top ↑</a></div>
+      <p class="footer-credit">Based on <a href="https://github.com/Dasol-Choi/dasol-choi.github.io" target="_blank" rel="noopener noreferrer">Dasol Choi's template</a> · Adapted from <a href="https://carteryoo.github.io" target="_blank" rel="noopener noreferrer">Seunghyun Yoo's site</a></p>
+    </div>
+  </footer>
+</body>
+</html>

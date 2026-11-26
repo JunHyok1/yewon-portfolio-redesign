@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yewon Choi</title>
+  <meta name="description" content="Yewon Choi — aspiring Associate Product Manager, Computer Graphics Technology at Purdue University">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+  <script>
+    /* Must run before first render: pick the slide direction for this page's view transition. */
+    addEventListener('pagereveal', (e) => {
+      const dir = sessionStorage.getItem('vt-dir'); sessionStorage.removeItem('vt-dir');
+      if (e.viewTransition && dir && location.pathname !== '/') e.viewTransition.types.add(dir);
+    });
+    document.addEventListener('click', (e) => { const a = e.target.closest('a[data-dir]'); sessionStorage.setItem('vt-dir', a ? a.dataset.dir : ''); });
+  </script>
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-brand" href="#top">Yewon Choi</a>
+      <ul class="nav-list">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+      <span class="nav-indicator" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <header class="container hero" id="top">
+    <img class="hero-photo" src="/assets/profile-pics/yewon.jpg" alt="Yewon Choi" width="256" height="384">
+    <div class="hero-text">
+      <h1>Yewon Choi</h1>
+      <p class="hero-role">Aspiring Associate Product Manager</p>
+      <p class="hero-school">Computer Graphics Technology @ Purdue University</p>
+      <p class="hero-intro">I'm a product-minded builder. I define problems by talking to users and digging into data, then carry the solution through prototype and launch myself, from a campus timetable app that reached 300+ users to a Figma-to-Flutter pipeline that raised generation accuracy from 83.1% to 99.5%.</p>
+      <div class="links">
+        <a class="link" href="/assets/cv/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4 3.5h4.5V8"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+        <a class="link js-email" href="#top" data-u="6130iohcdaer" data-d="moc.liamg">readchoi0316@gmail.com</a>
+        <a class="link" href="https://www.linkedin.com/in/choi-amyyyy" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4 3.5h4.5V8"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <h2 class="section-title" id="experience-heading">Experience</h2>
+      <div class="rows">
+        <a class="row" id="row-fasoo" href="/projects/fasoo/" aria-label="Fasoo Design System Auto-Generator: read case study">
+          <div class="row-media row-media--contain" style="view-transition-name: media-fasoo"><img src="/assets/experience/fasoo/thumb.png" alt="" loading="lazy"></div><div class="row-body">
+            <div class="row-head"><h3 class="row-title">Fasoo Design System Auto-Generator</h3><span class="row-date">Jun – Aug 2026</span></div>
+            <p class="t-meta">Software Engineer Intern · Fasoo AI</p>
+            <p class="t-body">A Figma-to-Flutter pipeline that generates design-system components and checks them against the spec.</p>
+            <div class="row-foot"><ul class="chips"><li>Accuracy 83.1% → 99.5%</li></ul><span class="row-cta">Read case study <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="row" id="row-p2sac" href="/projects/p2sac/" aria-label="P2SAC LinkedIn Content Strategy: read case study">
+          <div class="row-media row-media--top" style="view-transition-name: media-p2sac"><img src="/assets/experience/p2sac/thumb.png" alt="" loading="lazy"></div><div class="row-body">
+            <div class="row-head"><h3 class="row-title">P2SAC LinkedIn Content Strategy</h3><span class="row-date">Feb – Jun 2026</span></div>
+            <p class="t-meta">Student Marketing Consultant · Purdue Marketing Lab</p>
+            <p class="t-body">Benchmarked 38 LinkedIn posts to find what performs, executed the strategy, and designed the conference brochure.</p>
+            <div class="row-foot"><ul class="chips"><li>38 posts analyzed</li><li>22 posts executed</li></ul><span class="row-cta">Read case study <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></span></div>
+          </div>
+        </a>
+
+        <article class="row">
+          <div class="row-media "><img src="/assets/experience/purdue-bme/bme-16x9.jpg" alt="" loading="lazy"></div><div class="row-body">
+            <div class="row-head"><h3 class="row-title">MedSAM2 on Pediatric Echocardiography</h3><span class="row-date">Oct 2025 – May 2026</span></div>
+            <p class="t-meta">Undergraduate Research Assistant · Purdue Biomedical Engineering</p>
+            <p class="t-body">Evaluated MedSAM2 on pediatric echocardiographic videos with a Python measurement pipeline. Co-author of a manuscript submitted to npj Digital Medicine.</p>
+            <div class="row-foot"><ul class="chips"><li>1st Place, KSEA Research Presentation</li></ul><span class="links"><a class="link" href="/assets/experience/purdue-bme/poster.pdf" target="_blank" rel="noopener noreferrer">Poster <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4 3.5h4.5V8"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a><a class="link" href="/assets/experience/purdue-bme/abstract.pdf" target="_blank" rel="noopener noreferrer">Abstract <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4 3.5h4.5V8"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <h2 class="section-title" id="projects-heading">Projects</h2>
+      <div class="rows">
+        <a class="row" id="row-chatit" href="/projects/chatit/" aria-label="Chatit: read case study">
+          <div class="row-media row-media--logo" style="view-transition-name: media-chatit"><img src="/assets/projects/chatit/thumb.png" alt="" loading="lazy"></div><div class="row-body">
+            <div class="row-head"><h3 class="row-title">Chatit</h3><span class="row-date">Apr – Dec 2025</span></div>
+            <p class="t-meta">Founding Member &amp; iOS Developer</p>
+            <p class="t-body">A campus timetable and community app built by a three-person founding team. I led the core timetable feature.</p>
+            <div class="row-foot"><ul class="chips"><li>300+ users</li><li>App Store, Oct 2025</li></ul><span class="row-cta">Read case study <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></span></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section" id="leadership" aria-labelledby="leadership-heading">
+      <h2 class="section-title" id="leadership-heading">Leadership</h2>
+      <div class="rows">
+        <a class="row row--text" id="row-oz-lab" href="/oz-lab/" aria-label="OZ Lab: read case study">
+          <div class="row-body">
+            <div class="row-head"><h3 class="row-title">OZ Lab</h3><span class="row-date">Aug 2024 – Present</span></div>
+            <p class="t-meta">Co-Founder &amp; President · LIKELION US Purdue Chapter</p>
+            <p class="t-body">Co-founded a Korean-American student startup club and grew it from 4 founding members to 35. Also led its Front-End (React) team from Aug 2025 to May 2026.</p>
+            <div class="row-foot"><ul class="chips"><li>35 members</li><li>Featured in The Korea Daily</li></ul><span class="row-cta">Read case study <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></span></div>
+          </div>
+        </a>
+
+        <article class="row row--text">
+          <div class="row-body">
+            <div class="row-head"><h3 class="row-title">LIKELION US</h3><span class="row-date">Aug 2025 – May 2026</span></div>
+            <p class="t-meta">National Executive Board Member · Marketing Team</p>
+            <p class="t-body">Designed posters and social content, standardized the brand colors and visual identity, and ran a weekly Instagram schedule with a semi-automated workflow.</p>
+            <div class="row-foot"><ul class="chips"><li>10+ university collaborations</li></ul><span class="links"><a class="link" href="https://www.linkedin.com/company/likelionus/posts/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4 3.5h4.5V8"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a><a class="link" href="https://www.instagram.com/likelion.us" target="_blank" rel="noopener noreferrer">Instagram <svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4 3.5h4.5V8"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <h2 class="section-title" id="education-heading">Education</h2>
+      <div class="rows">
+        <article class="row row--text">
+          <div class="row-body">
+            <div class="row-head"><h3 class="row-title">Purdue University</h3><span class="row-date">Aug 2024 – Present</span></div>
+            <p class="t-meta">B.S. in Computer Graphics Technology</p>
+            <p class="t-body">Double major in Data Visualization and Web Programming &amp; Design · Minor in Economics · Certificate in Entrepreneurship and Innovation</p>
+            <div class="row-foot"><ul class="chips"><li>GPA 3.93 / 4.00</li><li>Dean's List, 4 semesters</li></ul></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    /* Back from a case study: put the reader where they were before the first paint, so the photo flies to the right card. */
+    if (sessionStorage.getItem('home-restore')) {
+      sessionStorage.removeItem('home-restore');
+      const y = +sessionStorage.getItem('home-y') || 0;
+      history.scrollRestoration = 'manual';
+      scrollTo(0, y);
+    }
+  </script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row"><span>© 2026 Yewon Choi · Last updated November 19, 2026</span><a href="#top">Back to top ↑</a></div>
+      <p class="footer-credit">Based on <a href="https://github.com/Dasol-Choi/dasol-choi.github.io" target="_blank" rel="noopener noreferrer">Dasol Choi's template</a> · Adapted from <a href="https://carteryoo.github.io" target="_blank" rel="noopener noreferrer">Seunghyun Yoo's site</a></p>
+    </div>
+  </footer>
+</body>
+</html>

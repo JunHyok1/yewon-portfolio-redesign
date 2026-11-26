@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fasoo Design System Auto-Generator · Yewon Choi</title>
+  <meta name="description" content="A Figma-to-Flutter pipeline that generates Fasoo Design System components.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+  <script>
+    /* Must run before first render: pick the slide direction for this page's view transition. */
+    addEventListener('pagereveal', (e) => {
+      const dir = sessionStorage.getItem('vt-dir'); sessionStorage.removeItem('vt-dir');
+      if (e.viewTransition && dir && location.pathname !== '/') e.viewTransition.types.add(dir);
+    });
+    document.addEventListener('click', (e) => { const a = e.target.closest('a[data-dir]'); sessionStorage.setItem('vt-dir', a ? a.dataset.dir : ''); });
+  </script>
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-brand" href="/">Yewon Choi</a>
+      <ul class="nav-list">
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#leadership">Leadership</a></li>
+        <li><a href="/#education">Education</a></li>
+      </ul>
+      <span class="nav-indicator" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <main id="main-content" class="container">
+    <header class="case-head" id="top">
+      <a class="link" href="/#row-fasoo" data-dir="back"><svg class="icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 6H2M5.5 2.5 2 6l3.5 3.5"/></svg> Experience</a>
+      <h1>Fasoo Design System Auto-Generator</h1>
+      <p class="t-meta">Software Engineer Intern · Fasoo AI, Seoul · Jun – Aug 2026</p>
+      <p class="case-summary">A Figma-to-Flutter pipeline that generates Fasoo Design System components.</p>
+      <ul class="chips"><li>Accuracy 83.1% → 99.5%</li></ul>
+      
+    </header>
+    <figure class="case-hero " style="view-transition-name: media-fasoo"><img src="/assets/projects/fasoo/thumb.png" alt=""></figure>
+    <div class="case-body">
+      <section class="block"><h2 class="t-label">Problem</h2><div class="block-content"><p>Fasoo's design system centralized UI components, but keeping Figma and code in sync was still manual. After each design change, a developer had to find what changed, update the Flutter library by hand, and review it, and mismatches with the design still reached QA. Accuracy dropped as components grew, and repeated rounds of fixes and designer checks made updates slow.</p></div></section>
+      <section class="block"><h2 class="t-label">Users</h2><div class="block-content"><p>Designers who maintain the system in Figma, and developers who implement it in Flutter and SwiftUI.</p></div></section>
+      <section class="block"><h2 class="t-label">My role</h2><div class="block-content"><p>I designed and built the pipeline end to end: extracting design values from Figma, generating components with an LLM agent, and verifying the result against the spec. I also wrote the project documentation for executives.</p></div></section>
+      <section class="block"><h2 class="t-label">Key decisions</h2><div class="block-content"><ol class="decisions"><li><p><b>Verify the LLM on both sides.</b> LLM output varies between runs, so I checked the input spec and the generated code with deterministic comparisons (colors, dimensions, radius, typography).</p></li><li><p><b>Fix problems in Figma, not in code.</b> When a color did not exist in the design system, the pipeline stopped with an error instead of guessing, so inconsistencies could not spread quietly.</p></li><li><p><b>Update with diffs, not full regeneration.</b> A small design change produces a small, reviewable code change.</p></li><li><p><b>Two ways to run it.</b> A desktop app for semi-automatic runs, and a trigger that detects Figma changes and opens a merge request without anyone running it.</p></li></ol></div></section>
+      <section class="block"><h2 class="t-label">Outcome</h2><div class="block-content"><p>Validation accuracy rose from 83.1% to 99.5%. A designer can now edit Figma and get a code update ready for review, instead of waiting for a developer to copy it by hand.</p></div></section>
+      <section class="block"><h2 class="t-label">Tools</h2><div class="block-content"><p>Figma MCP · LLM coding agent · Flutter · SwiftUI</p></div></section>
+    </div>
+    <nav class="pager" aria-label="More case studies">
+      <a href="/oz-lab/" data-dir="back"><span class="t-label">Previous</span><b>OZ Lab</b></a>
+      <a class="next" href="/projects/p2sac/" data-dir="forward"><span class="t-label">Next</span><b>P2SAC LinkedIn Content Strategy</b></a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row"><span>© 2026 Yewon Choi · Last updated November 19, 2026</span><a href="#top">Back to top ↑</a></div>
+      <p class="footer-credit">Based on <a href="https://github.com/Dasol-Choi/dasol-choi.github.io" target="_blank" rel="noopener noreferrer">Dasol Choi's template</a> · Adapted from <a href="https://carteryoo.github.io" target="_blank" rel="noopener noreferrer">Seunghyun Yoo's site</a></p>
+    </div>
+  </footer>
+</body>
+</html>
